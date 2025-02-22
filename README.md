@@ -9,8 +9,8 @@ Assurez-vous d'avoir Python installé sur votre machine.
 
 ### Cloner le projet
 ```bash
-git clone https://github.com/votre-repo/snake-rl.git
-cd snake-rl
+git clone https://github.com/SachaHenneveux/snakeIA.git
+cd snakeIA
 ```
 
 ### Créer un environnement virtuel
