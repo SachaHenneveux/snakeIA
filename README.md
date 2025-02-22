@@ -9,8 +9,8 @@ Assurez-vous d'avoir Python installé sur votre machine.
 
 ### Cloner le projet
 ```bash
-git clone https://github.com/votre-repo/snake-rl.git
-cd snake-rl
+git clone https://github.com/SachaHenneveux/snakeIA.git
+cd snakeIA
 ```
 
 ### Créer un environnement virtuel
@@ -47,7 +47,7 @@ python train_test.py --test
 ## Résultats
 L'IA apprend progressivement à optimiser ses déplacements pour maximiser son score. Voici un exemple de progression :
 
-![Graphique des scores](reward_plot.png)
+![Graphique des scores](model/reward_plot.png)
 
 ## Auteurs
 - **Sacha Henneveux**
