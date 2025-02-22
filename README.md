@@ -47,7 +47,7 @@ python train_test.py --test
 ## Résultats
 L'IA apprend progressivement à optimiser ses déplacements pour maximiser son score. Voici un exemple de progression :
 
-![Graphique des scores](reward_plot.png)
+![Graphique des scores](model/reward_plot.png)
 
 ## Auteurs
 - **Sacha Henneveux**
