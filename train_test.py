@@ -5,6 +5,7 @@ import pygame
 import time
 from graphics import init_graphics, draw_game, save_reward_plot
 from environnement import BLACK, SnakeGame
+import argparse
 
 def train():
     game = SnakeGame()
@@ -69,12 +70,15 @@ def test():
 
 
 if __name__ == "__main__":
-    while True:
-        res = input("Tapez 't' pour test et 'e' pour entraîner : ")
-        if res in ['t', 'e']:
-            break
-        print("Veuillez entrer 't' ou 'e'")
-    if res == 'e':
+    parser = argparse.ArgumentParser(description="Train or test the Snake AI.")
+    parser.add_argument("--train", action="store_true", help="Train the AI.")
+    parser.add_argument("--test", action="store_true", help="Test the AI.")
+
+    args = parser.parse_args()
+
+    if args.train:
         train()
-    elif res == 't':
+    elif args.test:
         test()
+    else:
+        print("Veuillez spécifier --train ou --test.")
